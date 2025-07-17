@@ -118,11 +118,74 @@ main{
   max-width: 530px;
 }
 
+/* ====================== features-enjoy ======================= */
+.feautures-enjoy{
+  margin-top: 150px;
+  display: flex;
+}
+.left{
+  margin-top: 70px;
+}
+.left h1{
+  font-weight: bold;
+  font-size: 2.7rem;
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+  width: 468px;
+}
+.para{
+  font-size: 1rem;
+  font-weight: 500;
+  width: 586px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.card{
+  width: 580px;
+  height: 170px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-top: 10px;
+}
+.card h2{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.card p{
+font-size: 1rem;
+font-weight: 400;
+}
+
+.right img{
+  width: 100%;
+  margin-left: 74px;
+  margin-top: -50px;
+}
+.butn button{
+  background-color: #FF900E;
+  color: #fff;
+  border: none;
+  width: 300px;
+  height: 180px;
+  border-radius: 8px;
+  margin-top: -150px;
+  margin-left: 15px;
+}
+.butn h2{
+  font-weight: bold;
+  font-size: 4.1rem;
+}
+.butn span{
+  font-size: 1.6rem;
+}
 
 /*================= responsive mobile =================*/
 @media screen and (max-width:576px) {
 .navbar,
-.features
+.features,
+.feautures-enjoy
 {
   flex-direction: column;
 }  
@@ -135,11 +198,30 @@ justify-content: center;
 .images{
   grid-template-columns: 1fr;
 }
+.para{
+  padding: 10px;
+}
+.card, .para{
+  width: auto;
+  margin: 0 10px;
+  
+}
+.left h1{
+ padding: 8px;
+}
+.right img{
+width: 98%;
+  margin: 30px auto;
+  display: flex;
+}
+
 }
 
 /*==================== responsive tablet ==========================*/
 @media screen and (min-width:576px) and (max-width:992px) {
- .features{
+ .features,
+ .feautures-enjoy
+ {
   flex-direction: column;
  } 
  .content{
@@ -147,5 +229,21 @@ justify-content: center;
  }
  .images{
   grid-template-columns:repeat(2, 1fr);
+}
+.para{
+  padding: 10px;
+}
+.card, .para{
+  width: auto;
+  margin: 0 10px;
+  
+}
+.left h1{
+  margin-left: 15px;
+}
+.right img{
+  width: 98%;
+  margin: 30px auto;
+  display: flex;
 }
 }
