@@ -122,6 +122,7 @@ main{
 .feautures-enjoy{
   margin-top: 150px;
   display: flex;
+  justify-content: space-between;
 }
 .left{
   margin-top: 70px;
@@ -160,7 +161,7 @@ font-weight: 400;
 
 .right img{
   width: 100%;
-  margin-left: 74px;
+  margin-left: 10px;
   margin-top: -50px;
 }
 .butn button{
@@ -171,7 +172,7 @@ font-weight: 400;
   height: 180px;
   border-radius: 8px;
   margin-top: -150px;
-  margin-left: 15px;
+  margin-left: -36px;
 }
 .butn h2{
   font-weight: bold;
@@ -211,7 +212,7 @@ justify-content: center;
 }
 .right img{
 width: 98%;
-  margin: 30px auto;
+  margin: 30px 5px;
   display: flex;
 }
 
